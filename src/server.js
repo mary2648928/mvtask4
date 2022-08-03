@@ -1,7 +1,14 @@
 //import app from "./App";
 const app = express();
-const path = require("path")
+const express = require("express");
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
+
+/*
 app.use(express.static(path.join(__dirname, "client", "build")))
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
@@ -10,13 +17,7 @@ const port = process.env.PORT || 5000;
 app.listen(port);
 
 
-const express = require("express");
 
-const { MongoClient } = require("mongodb");
-const uri = "mongodb+srv://admin:task4@task4.flmjrnj.mongodb.com/?retryWrites=true&w=majority";
-app.use(express.static("public"));
-app.get("/api/movie", async function (req, res) {
-  const client = new MongoClient(uri, { useUnifiedTopology: true });
   try {
     await client.connect();
     const database = client.db('users');
@@ -46,5 +47,5 @@ app.get("/api/movie", async function (req, res) {
 });
 
 // start the server listening for requests
-app.listen(process.env.PORT || 8000,
-  () => console.log("Server is running..."));
+
+*/

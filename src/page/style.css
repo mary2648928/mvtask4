@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    width: 300px;
+    margin: 12% auto;
+}
+
+.home {
+    width: max-content;
+    margin: 12% auto;
+}
+.form {
+    position: relative;
+}
+
+.buttonTitle {
+
+    padding: 1px 7px;
+    margin-bottom: -1px;
+    font-size: 0.6em;
+    border-bottom: 0;
+    float: left;
+}
+
+
+
+
+.button:hover {
+    color: #d3d3d3;
+    background: #e6b333;
+}
+
+.lock {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 7px;
+    left: 5px;
+}
+
+.user {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 7px;
+    left: 5px;
+}
+
+
+input {
+    width: 90%;
+    padding: 5px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 5px 0;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid white;
+    box-shadow: none;
+}
+
+.userInput:focus .user {
+    background: white !important;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: 2px solid #22272d;
+    padding-left: 8px;
+    color: #e6b333;
+}
+
+input[type="password"] {
+    background: transparent;
+    border: 2px solid #22272d;
+    padding-left: 8px;
+    color: #e6b333;
+}
+
+
+input[type="submit"] {
+    background: #e6b333;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+    position: fixed;
+    width: 200px;
+
+    margin-left: 20% auto;
+    margin-left: -50px;
+}
+
+input[type="submitLog"] {
+    background: #e6b333;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+    position: center;
+    width: 200px;
+    margin-top: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+
+}
+
+.no{
+    text-align: left;
+    padding: 1px 5px;
+    color: #282c34;
+}
+.yes{
+    text-align: right;
+    padding: 1px 5px;
+    color: #282c34;
+}
+.radioCheck {
+    width: 60px;
+    height: 20px;
+    border: 2px solid #22272d;
+    border-radius: 30px;
+    margin-top: 10px;
+    align-content: space-around;
+    text-align: match-parent;
+    padding: 3px 2px;
+    color: #282c34;
+    font-size: 0.6em;
+
+    background: #babbbd;
+
+}
+.radioCheck label {
+    margin: 0 2px;
+    cursor: pointer;
+}
+.radioCheck.switchSelection {
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #babbbd;
+    margin-top: -11px;
+    margin-left: 11px;
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+
+}
+
+
+.button {
+    display: inline-block;
+    box-shadow:
+            0 -4px 4px -3px rgba(0, 0, 0, 0.3),
+            -7px 1.6px 4px -5px rgba(0, 0, 0, 0.3),
+            7px 0.5px 4px -5px rgba(0, 0, 0, 0.3);
+
+    color: #7f8084;
+    border: 1px solid #7f8084;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    float: right;
+    margin-left: 10px;
+}
+
+.forgotLabel {
+    font-size: 0.8em;
+    color: #7f8084;
+    margin-top: 15px;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+form {
+    position: relative;
+}
+
+clear {
+    clear: both;
+}
+
+
+lock {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 7px;
+    left: 5px;
+}
+
+
+user {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    padding: 7px;
+    left: 5px;
+}
+
+
+.checkLabel {
+    font-size: 0.8em;
+    color: #7f8084;
+    margin-top: 5px;
+    float: left;
+    padding: 10px 0;
+    margin-left: -20px;
+    width: 100px;
+
+}
+
+
+
+.signIn {
+    float: left;
+    color: #d3d3d3;
+    font-size: 1.3em;
+}
+
+label {
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.switchSelection {
+    display: block;
+    position: absolute;
+
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    border: #e6b333 solid 5.5px;
+    margin-top: -20px;
+    margin-left: -2px;
+    margin-right: 40px;
+    transition: 0.2s ease-out;
+    color: #babbbd;
+}
+
+.radioYes:checked ~ .switchSelection {
+    margin-left: 30px !important;
+}
+
+
+
