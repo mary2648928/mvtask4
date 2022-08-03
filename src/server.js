@@ -13,7 +13,7 @@ app.listen(port);
 const express = require("express");
 
 const { MongoClient } = require("mongodb");
-const uri = "mongodb+srv://admin:task4@task4.flmjrnj.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://admin:task4@task4.flmjrnj.mongodb.com/?retryWrites=true&w=majority";
 app.use(express.static("public"));
 app.get("/api/movie", async function (req, res) {
   const client = new MongoClient(uri, { useUnifiedTopology: true });
